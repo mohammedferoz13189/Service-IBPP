@@ -4,100 +4,230 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Find Your Service - Home</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f4f6f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #0066ff, #00c6ff);
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        nav {
+            background-color: #ffffff;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 15px;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #0066ff;
+            font-weight: 500;
+        }
+
+        nav ul li a:hover {
+            color: #003d99;
+        }
+
+        main {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        section {
+            margin-bottom: 50px;
+        }
+
+        section h2 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            color: #0066ff;
+        }
+
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        article {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease;
+        }
+
+        article:hover {
+            transform: translateY(-5px);
+        }
+
+        article h3 {
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+        }
+
+        article a {
+            display: inline-block;
+            margin-top: 10px;
+            text-decoration: none;
+            color: white;
+            background-color: #0066ff;
+            padding: 8px 15px;
+            border-radius: 5px;
+            font-size: 0.9rem;
+        }
+
+        article a:hover {
+            background-color: #003d99;
+        }
+
+        ol {
+            padding-left: 20px;
+        }
+
+        footer {
+            background-color: #1a1a1a;
+            color: #cccccc;
+            text-align: center;
+            padding: 25px 10px;
+        }
+
+        footer a {
+            color: #00c6ff;
+            text-decoration: none;
+            margin: 0 8px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Find Your Service</h1>
-        <p>Connect with trusted service providers near you</p>
-    </header>
 
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="login.html">Login</a></li>
-            <li><a href="register.html">Register</a></li>
-        </ul>
-    </nav>
+<header>
+    <h1>Find Your Service</h1>
+    <p>Connect with trusted service providers near you</p>
+</header>
 
-    <main>
-        <section>
-            <h2>Our Services</h2>
-            <p>Choose from our wide range of professional services</p>
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="register.html">Register</a></li>
+    </ul>
+</nav>
 
+<main>
+    <section>
+        <h2>Our Services</h2>
+        <p>Choose from our wide range of professional services</p>
+
+        <div class="services">
             <article>
                 <h3>🔧 Plumber</h3>
                 <p>Expert plumbing services for all your needs</p>
-                <p><a href="plumber.html">Find Plumbers</a></p>
+                <a href="plumber.html">Find Plumbers</a>
             </article>
-
-            <hr>
 
             <article>
                 <h3>⚡ Electrician</h3>
                 <p>Professional electrical repair and installation</p>
-                <p><a href="electrician.html">Find Electricians</a></p>
+                <a href="electrician.html">Find Electricians</a>
             </article>
-
-            <hr>
 
             <article>
                 <h3>🧹 Maid</h3>
                 <p>Reliable housekeeping and cleaning services</p>
-                <p><a href="maid.html">Find Maids</a></p>
+                <a href="maid.html">Find Maids</a>
             </article>
-
-            <hr>
 
             <article>
                 <h3>💅 Beautician</h3>
                 <p>Beauty and grooming services at your doorstep</p>
-                <p><a href="beautician.html">Find Beauticians</a></p>
+                <a href="beautician.html">Find Beauticians</a>
             </article>
-
-            <hr>
 
             <article>
                 <h3>🏥 Nursing</h3>
                 <p>Professional nursing and healthcare services</p>
-                <p><a href="nursing.html">Find Nurses</a></p>
+                <a href="nursing.html">Find Nurses</a>
             </article>
-
-            <hr>
 
             <article>
                 <h3>👴 Care Taker</h3>
                 <p>Compassionate care for elderly and children</p>
-                <p><a href="caretaker.html">Find Care Takers</a></p>
+                <a href="caretaker.html">Find Care Takers</a>
             </article>
-        </section>
+        </div>
+    </section>
 
-        <section>
-            <h2>How It Works</h2>
-            <ol>
-                <li>Select the service you need</li>
-                <li>Choose your location</li>
-                <li>Browse available service providers</li>
-                <li>Contact them directly</li>
-            </ol>
-        </section>
+    <section>
+        <h2>How It Works</h2>
+        <ol>
+            <li>Select the service you need</li>
+            <li>Choose your location</li>
+            <li>Browse available service providers</li>
+            <li>Contact them directly</li>
+        </ol>
+    </section>
 
-        <section>
-            <h2>Are You a Service Provider?</h2>
-            <p>Join our platform and connect with customers in your area</p>
-            <p><a href="register.html"><strong>Register Now</strong></a></p>
-        </section>
-    </main>
+    <section>
+        <h2>Are You a Service Provider?</h2>
+        <p>Join our platform and connect with customers in your area</p>
+        <a href="register.html"><strong>Register Now</strong></a>
+    </section>
+</main>
 
-    <footer>
-        <hr>
-        <p>&copy; 2026 Find Your Service. All rights reserved.</p>
-        <p>
-            <a href="index.html">Home</a> | 
-            <a href="services.html">Services</a> | 
-            <a href="login.html">Login</a> | 
-            <a href="register.html">Register</a>
-        </p>
-    </footer>
+<footer>
+    <p>&copy; 2026 Find Your Service. All rights reserved.</p>
+    <p>
+        <a href="index.html">Home</a> |
+        <a href="services.html">Services</a> |
+        <a href="login.html">Login</a> |
+        <a href="register.html">Register</a>
+    </p>
+</footer>
+
 </body>
 </html>
