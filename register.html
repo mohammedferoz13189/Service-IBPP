@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register as Service Provider - Find Your Service</title>
+</head>
+<body>
+    <header>
+        <h1>Join Our Service Network</h1>
+        <p>Register as a service provider and grow your business</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="register.html">Register</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Service Provider Registration</h2>
+            
+            <form action="profile.html" method="get">
+                <table>
+                    <tr>
+                        <td><label for="role">Service Type:</label></td>
+                        <td>
+                            <select id="role" name="role" required>
+                                <option value="">-- Select Service --</option>
+                                <option value="plumber">Plumber</option>
+                                <option value="electrician">Electrician</option>
+                                <option value="maid">Maid</option>
+                                <option value="beautician">Beautician</option>
+                                <option value="nursing">Nursing</option>
+                                <option value="caretaker">Care Taker</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="fullname">Full Name:</label></td>
+                        <td><input type="text" id="fullname" name="fullname" required size="30" placeholder="Enter your full name"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="phone">Phone Number:</label></td>
+                        <td><input type="tel" id="phone" name="phone" required size="30" placeholder="+91 98765 43210"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="email">Email Address:</label></td>
+                        <td><input type="email" id="email" name="email" required size="30" placeholder="your@email.com"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="location">Location/City:</label></td>
+                        <td>
+                            <select id="location" name="location" required>
+                                <option value="">-- Select City --</option>
+                                <option value="bangalore">Bangalore</option>
+                                <option value="chennai">Chennai</option>
+                                <option value="hyderabad">Hyderabad</option>
+                                <option value="mumbai">Mumbai</option>
+                                <option value="delhi">Delhi</option>
+                                <option value="pune">Pune</option>
+                                <option value="kolkata">Kolkata</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="area">Area/Locality:</label></td>
+                        <td><input type="text" id="area" name="area" required size="30" placeholder="e.g., Koramangala, Jayanagar"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="experience">Years of Experience:</label></td>
+                        <td><input type="number" id="experience" name="experience" required min="0" max="50" placeholder="e.g., 5"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="price">Service Price (₹):</label></td>
+                        <td><input type="number" id="price" name="price" required min="100" step="50" placeholder="e.g., 500"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="specialization">Specialization:</label></td>
+                        <td><textarea id="specialization" name="specialization" rows="3" cols="28" placeholder="Describe your services and specialties"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td><label for="availability">Availability:</label></td>
+                        <td>
+                            <input type="checkbox" id="mon" name="mon" checked>
+                            <label for="mon">Mon</label>
+                            <input type="checkbox" id="tue" name="tue" checked>
+                            <label for="tue">Tue</label>
+                            <input type="checkbox" id="wed" name="wed" checked>
+                            <label for="wed">Wed</label>
+                            <br>
+                            <input type="checkbox" id="thu" name="thu" checked>
+                            <label for="thu">Thu</label>
+                            <input type="checkbox" id="fri" name="fri" checked>
+                            <label for="fri">Fri</label>
+                            <input type="checkbox" id="sat" name="sat" checked>
+                            <label for="sat">Sat</label>
+                            <input type="checkbox" id="sun" name="sun">
+                            <label for="sun">Sun</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="password">Password:</label></td>
+                        <td><input type="password" id="password" name="password" required size="30" placeholder="Create password"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="confirm_password">Confirm Password:</label></td>
+                        <td><input type="password" id="confirm_password" name="confirm_password" required size="30" placeholder="Re-enter password"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <input type="checkbox" id="terms" name="terms" required>
+                            <label for="terms">I agree to the <a href="register.html">Terms and Conditions</a></label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <button type="submit">Register Now</button>
+                            <button type="reset">Clear Form</button>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+
+            <hr>
+
+            <h3>Already have an account?</h3>
+            <p><a href="login.html"><strong>Login here</strong></a></p>
+        </section>
+
+        <section>
+            <h2>Benefits of Joining</h2>
+            <ul>
+                <li>Connect with thousands of customers</li>
+                <li>Manage your bookings online</li>
+                <li>Build your professional profile</li>
+                <li>Get verified and trusted badge</li>
+                <li>Receive instant job notifications</li>
+                <li>Set your own pricing</li>
+                <li>Track your earnings</li>
+                <li>24/7 support from our team</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Registration Requirements</h2>
+            <ol>
+                <li>Valid phone number for customer contact</li>
+                <li>Proof of experience (documents to be uploaded after registration)</li>
+                <li>Valid ID proof (Aadhar/PAN/Driving License)</li>
+                <li>Professional certification (if applicable)</li>
+                <li>Background verification (conducted by our team)</li>
+            </ol>
+            <p><strong>Note:</strong> All information will be verified before your profile goes live</p>
+        </section>
+    </main>
+
+    <footer>
+        <hr>
+        <p>&copy; 2026 Find Your Service. All rights reserved.</p>
+        <p>
+            <a href="index.html">Home</a> | 
+            <a href="services.html">Services</a> | 
+            <a href="login.html">Login</a> | 
+            <a href="register.html">Register</a>
+        </p>
+    </footer>
+</body>
+</html>

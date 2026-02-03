@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Find Your Service</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome Back!</h1>
+        <p>Login to access our services</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="register.html">Register</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>User Login</h2>
+            
+            <form action="index.html" method="get">
+                <table>
+                    <tr>
+                        <td><label for="email">Email Address:</label></td>
+                        <td><input type="email" id="email" name="email" required size="30" placeholder="your@email.com"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="password">Password:</label></td>
+                        <td><input type="password" id="password" name="password" required size="30" placeholder="Enter password"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <input type="checkbox" id="remember" name="remember">
+                            <label for="remember">Remember me</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <button type="submit">Login</button>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+
+            <hr>
+
+            <h3>Don't have an account?</h3>
+            <p><a href="register.html"><strong>Register as a Service Provider</strong></a></p>
+            
+            <h3>Forgot Password?</h3>
+            <p><a href="login.html">Reset your password</a></p>
+        </section>
+
+        <section>
+            <h2>Why Login?</h2>
+            <ul>
+                <li>Save your favorite service providers</li>
+                <li>View booking history</li>
+                <li>Get personalized recommendations</li>
+                <li>Faster checkout and contact</li>
+                <li>Manage your profile</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>For Service Providers</h2>
+            <p>Are you a service provider looking to register?</p>
+            <p><a href="register.html">Click here to create your provider account</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <hr>
+        <p>&copy; 2026 Find Your Service. All rights reserved.</p>
+        <p>
+            <a href="index.html">Home</a> | 
+            <a href="services.html">Services</a> | 
+            <a href="login.html">Login</a> | 
+            <a href="register.html">Register</a>
+        </p>
+    </footer>
+</body>
+</html>
